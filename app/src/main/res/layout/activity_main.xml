@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    tools:context="com.example.sierzega.projectforclasses.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Amount of numbers to generate"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtTxtAmountOfNumbersToGenerate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnGenerateNumbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="List of generated numbers"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/lvListOfNumbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+        <Button
+            android:id="@+id/btnCalculateAvgValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate AVG" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="AvgValue"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtTxtAvgValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/black"
+            android:ems="10"
+            android:enabled="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:inputType="none"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+</LinearLayout>
